@@ -357,8 +357,9 @@ local function loadInfiniteYieldWithIndicator()
     coroutine.resume(progressThread)
     
     local success, result = pcall(function()
-        local scriptContent = game:HttpGet('сыллка на твой raw гитхаб')
-        
+        local scriptContent = game:HttpGet('СЫЛЛКА НА RAW GITHUB')
+---------------------ПРИМЕР 
+------------------ local scriptContent = game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source')
         progress = 100
         updateProgress(100)
         
@@ -375,7 +376,7 @@ local function loadInfiniteYieldWithIndicator()
         showNotification("Error", "Failed to load admin panel", err)
         Frame.Visible = true
     else
-        showNotification("Success", "Infinite Yield loaded successfully!", succ)
+        showNotification("Success", "НАЗВАНИЕ ТВОЕГО СКРИПТА loaded successfully!", succ)
         task.wait(1)
         ScreenGui:Destroy()
         
@@ -390,7 +391,7 @@ end
 
 local function getLiveKeys()
     local success, result = pcall(function()
-        return game:HttpGet("https://pastebin.com/raw/бд с пастбин?t=" .. tick())
+        return game:HttpGet("https://pastebin.com/raw/БАЗА ДАННЫХ С КЛЮЧАМИ ЗАМЕНИ НА СВОЙ?t=" .. tick())
     end)
     
     if not success then 
