@@ -357,8 +357,8 @@ local function loadInfiniteYieldWithIndicator()
     coroutine.resume(progressThread)
     
     local success, result = pcall(function()
-        local scriptContent = game:HttpGet('СЫЛЛКА НА RAW GITHUB')
----------------------ПРИМЕР 
+        local scriptContent = game:HttpGet('YOU LINK RAW GITHUB')
+---------------------Example: 
 ------------------ local scriptContent = game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source')
         progress = 100
         updateProgress(100)
@@ -376,7 +376,7 @@ local function loadInfiniteYieldWithIndicator()
         showNotification("Error", "Failed to load admin panel", err)
         Frame.Visible = true
     else
-        showNotification("Success", "НАЗВАНИЕ ТВОЕГО СКРИПТА loaded successfully!", succ)
+        showNotification("Success", "(You name Script) loaded successfully!", succ)
         task.wait(1)
         ScreenGui:Destroy()
         
@@ -391,7 +391,7 @@ end
 
 local function getLiveKeys()
     local success, result = pcall(function()
-        return game:HttpGet("https://pastebin.com/raw/БАЗА ДАННЫХ С КЛЮЧАМИ ЗАМЕНИ НА СВОЙ?t=" .. tick())
+        return game:HttpGet("https://pastebin.com/raw/Paste your key database link here?t=" .. tick())
     end)
     
     if not success then 
@@ -491,7 +491,7 @@ end)
 
 ImageButton.MouseButton1Click:Connect(function()
     ScreenGui:Destroy()
-    showNotification("Rejoining", "Переподключение к серверу...", info, 2)
+    showNotification("Rejoining", "Reconnecting with the server...", info, 2)
     task.wait(1)
     game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, game.JobId, game.Players.LocalPlayer)
 end)
